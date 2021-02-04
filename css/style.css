@@ -1,3 +1,42 @@
-body {
-    background-color: aqua;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Roboto&family=Slabo+27px&family=Ubuntu+Condensed&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+.fondo-amarillo{
+    background-color: rgb(255, 255, 200);
+}
+nav, button {
+    font-family: 'Slabo 27px', serif;
+}
+h2, h5, label {
+    font-family: 'Roboto', sans-serif;
+}
+header img {
+    width: 100%;
+}
+a.ancla {
+    position: relative;
+    top: -50px;
+}
+header h2 {
+    text-shadow: rgb(27, 27, 27) 1px 1px 1px;
+}
+div.card img {
+    max-height: 500px;
+}
+#mensaje {
+    resize: none;
+}
+footer p {
+    font-weight: bold;
+}
+footer p a {
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+input, textarea, p {
+    font-family: 'Open Sans', sans-serif;
+}
+textarea {
+    border-radius: 5px;
 }
