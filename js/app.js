@@ -12,7 +12,7 @@ function buscador(nombre_serie_pelicula){
             }
         }
     };
-    xhttp.open("GET", "http://www.omdbapi.com/?apikey=f497245&plot=full&t=" + nombre_serie_pelicula);
+    xhttp.open("GET", "https://www.omdbapi.com/?apikey=f497245&plot=full&t=" + nombre_serie_pelicula);
     xhttp.send();
 }
 
