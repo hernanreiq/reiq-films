@@ -1,7 +1,6 @@
 var catalogo_pelicula = document.getElementById('catalogo-resultado');
 
 function buscador(nombre_serie_pelicula){
-    var data = null;
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
@@ -13,8 +12,8 @@ function buscador(nombre_serie_pelicula){
             }
         }
     };
-    xhttp.open("GET", "http://www.omdbapi.com/?apikey=f497245&plot=full&t=" + nombre_serie_pelicula, true);
-    xhttp.send(data);
+    xhttp.open("GET", "http://www.omdbapi.com/?apikey=f497245&plot=full&t=" + nombre_serie_pelicula);
+    xhttp.send();
 }
 
 function comprobarArray(array) {
